@@ -27,7 +27,7 @@ const Banner = () => {
             >
                 <SwiperSlide>
                     <div
-                        className="hero min-h-screen"
+                        className="hero h-[500px]"
                         style={{
                             backgroundImage: `url(${BannerImage})`,
                         }}>
@@ -47,7 +47,7 @@ const Banner = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div
-                        className="hero min-h-screen"
+                        className="hero h-[500px]"
                         style={{
                             backgroundImage: `url(${BannerImage2})`,
                         }}>
@@ -67,7 +67,7 @@ const Banner = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div
-                        className="hero min-h-screen"
+                        className="hero h-[500px]"
                         style={{
                             backgroundImage: `url(${BannerImage3})`,
                         }}>
@@ -87,7 +87,7 @@ const Banner = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div
-                        className="hero min-h-screen"
+                        className="hero h-[500px]"
                         style={{
                             backgroundImage: `url(${BannerImage4})`,
                         }}>
