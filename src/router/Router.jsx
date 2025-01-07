@@ -15,12 +15,14 @@ import UpdateEquipPrivate from "../privateRouter/UpdateEquipPrivate";
 import MyEquipPrivate from "../privateRouter/MyEquipPrivate";
 import AllEquipCard from "../components/AllEquipCard";
 import ErrorPage from "../pages/ErroorPage";
+import AboutUs from "../pages/AboutUs";
+
 
 const router = createBrowserRouter([
     {
         path:'/',
         element:<MainLayout></MainLayout>,
-        errorElement:<ErrorPage></ErrorPage>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -39,6 +41,10 @@ const router = createBrowserRouter([
                     },
 
                 ]
+            },
+            {
+                path: "/about",
+                element:<AboutUs></AboutUs>
             },
             {
                 path:'/addEquipment',

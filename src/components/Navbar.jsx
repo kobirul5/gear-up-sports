@@ -23,7 +23,8 @@ const Navbar = () => {
 
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/allEquipment">All Sports Equipment</NavLink></li>
+        <li><NavLink to="/allEquipment">Shop</NavLink></li>
+        <li><NavLink to="/about">About Us</NavLink></li>
        {
         user && user?.email && <li><NavLink to="/addEquipment">Add Equipment</NavLink></li>
        }
@@ -36,8 +37,8 @@ const Navbar = () => {
             className={`navbar px-10 bg-primary text-secondary mx-auto`}>
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost px-0 lg:hidden">
-                        <FaBars></FaBars>
+                    <div tabIndex={0} role="button" className="btn btn-ghost px-1 lg:hidden">
+                        <FaBars ></FaBars>
                     </div>
                     <ul
                         tabIndex={0}
@@ -64,7 +65,7 @@ const Navbar = () => {
                                     content={`${user && user.displayName}`}
                                 />
                             </div>
-                            <NavLink onClick={logout} to="/auth/login" className="btn">Logout</NavLink>
+                            <NavLink onClick={logout} to="/auth/login" className="btn btn-outline text-white border-secondary hover:bg-orange-500 hover:border-secondary ">Logout</NavLink>
                         </div>
                         :
                         <div className='flex justify-center gap-3 items-center'>

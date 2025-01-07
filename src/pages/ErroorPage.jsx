@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import Heading from "../components/Heading";
 import Navbar from "../components/Navbar";
 import FooterImg from "../assets/WorldMap.svg"
 import errorImg from "../assets/404.jpg"
@@ -23,7 +22,6 @@ const ErrorPage = () => {
                     backgroundImage: `url(${FooterImg})`,
                 }}
             >
-
                 <Footer></Footer>
                 <p className="text-center text-primary pb-5">&copy; 2024 GearUp Sports. All rights reserved.</p>
             </section>
